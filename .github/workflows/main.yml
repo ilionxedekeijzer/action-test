@@ -21,7 +21,7 @@ jobs:
           $env:PFX_PASSWORD = $null
           Remove-Item -Path $pfxCertFilePath -Force
         env:
-          BASE64_PFX: ${{ secrets.PFX_BASE64 }}
+          PFX_BASE64: ${{ secrets.PFX_BASE64 }}
           PFX_PASSWORD: ${{ secrets.PFX_PASSWORD }}
       - name: Check out repository
         uses: actions/checkout@v2
