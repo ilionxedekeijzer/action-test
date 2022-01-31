@@ -1,1 +1,1 @@
-Write-Output "Hello world!"
+Write-Output "Goodbye cruel world!"
