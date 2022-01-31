@@ -34,7 +34,6 @@ jobs:
           $scripts = Get-ChildItem -Path . -Filter "*.ps1" -Recurse -ErrorAction Stop
           # load cert
           $codeSigningCert = Get-ChildItem Cert:\CurrentUser\My -CodeSigningCert | Select-Object -First 1
-
           foreach ($script in $scripts) {
               try {
                     $scriptContent = Get-Content -Path $script.FullName
